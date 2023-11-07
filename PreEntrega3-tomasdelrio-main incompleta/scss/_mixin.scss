@@ -1,0 +1,58 @@
+@mixin movil(){
+    @media only screen and (max-width: 767px) {
+        body{
+            display: flex;
+            flex-direction: column;
+            flex: content;
+        }
+        .logotipo{
+            width: 100%;
+            font-size: 3em;
+            padding: 20px; 
+        }
+        .grid-cubos{
+            display: grid;
+            grid-template-columns: auto;
+            flex-direction: column;
+        }
+        input{
+            width: 100%;
+            display: inline-block;
+    
+                input[type="text"], input[type="password"], input[type="email"], input[type="tel"]
+                {
+                width: 330px ; }
+       
+            }
+       
+        
+        ul li {
+            display: block;
+            text-align: center;
+            width: 100px;
+            border-radius: 2em;
+            border-color: black;
+            border-style: solid;
+        }
+    } 
+    @media only screen and (min-width:1024px)  {
+        footer{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logotipo{
+            width: 100%;
+            font-size: 3em;
+            padding: 20px; 
+        }
+        .grid-cubos{
+            display: grid;
+            grid-template-columns: auto;
+            flex-direction: column;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"]{
+            width: 350px ;
+        }
+    }
+    
+}
